@@ -75,11 +75,12 @@ Other technical articles:
 1. [Mike's dotfiles](https://github.com/mikeizbicki/dotfiles)
 1. [The missing semester of CS education](https://news.ycombinator.com/item?id=22226380)
 1. [Larry Wall's three virtures of a programmer](http://threevirtues.com/)
-1. [accidentally quadratic](https://accidentallyquadratic.tumblr.com/post/161243900944/mercurial-changegroup-application)
+1. [accidentally quadratic blog](https://accidentallyquadratic.tumblr.com/post/161243900944/mercurial-changegroup-application) and a [windows bug caused by an O(n^2) algorithm](https://news.ycombinator.com/item?id=21743424)
 1. [the history of git](https://www.welcometothejungle.com/en/articles/btc-history-git)
+1. [timsort](https://svn.python.org/projects/python/trunk/Objects/listsort.txt) -- Tim's [Zen of Python](http://www.openbookproject.net/books/bpp4awd/_static/ch10/zen.html)
+1. [stackoverflow - why processing sorted arrays is faster even in linear search](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array)
 
 <!--
-1. [O(n^2) again](https://news.ycombinator.com/item?id=21743424)
 1. [What every programmer should know about floating-point](https://floating-point-gui.de/)
 1. [The lat/lon floating point delusion](https://www.datafix.com.au/BASHing/2019-08-09.html)
 -->
@@ -91,6 +92,7 @@ Library documentation:
 1. [timeit](https://docs.python.org/3/library/timeit.html)
 1. [collections](https://docs.python.org/3/library/collections.html)
 1. [copy](https://docs.python.org/3/library/copy.html)
+1. [traceback](https://docs.python.org/3/library/traceback.html)
 
 Cheat sheets:
 
@@ -124,9 +126,9 @@ Programming games:
 | 4    | Thur, 13 Feb | Basic data structures: queue                    | MR 4.10-4.23  |
 | 5    | Tues, 18 Feb | Recursion I                                     | MR 5.1-5.10   |
 | 5    | Thur, 20 Feb | Recursion II                                    |               |
-| 6    | Tues, 25 Feb | Sorting I                                       | MR 6.6-6.12   |
-| 6    | Thur, 27 Feb | Sorting II                                      | [stackoverflow](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array) |
-| 7    | Tues, 03 Mar | Sorting: binary search                          | MR 6.3-6.4    |
+| 6    | Tues, 25 Feb | Sorting: binary search                          | MR 6.3-6.4    |
+| 6    | Thur, 27 Feb | Sorting: algorithms I                           | MR 6.6-6.12   |
+| 7    | Tues, 03 Mar | Sorting: algorithms II                          |               |
 | 7    | Thur, 05 Mar | Sorting: hash functions                         | MR 6.5        |
 | 8    | Tues, 10 Mar | Recursion: divide and conquer                   |               |
 | 8    | Thur, 12 Mar | Recursion: divide and conquer                   |               |
@@ -163,19 +165,20 @@ We will have approximately 1 assignment per week in this course according to the
 | ---------- | ------- | ------ | ------------------------------- |
 | 1          | project | 10     | Unix/Git tutorial               |
 | 2          | math    | 10     | Analysis/Big-O                  |
-| 3          | project | 10     | RPN calculator (stack)          |
+| 3          | project | 10     | HTML validator                  |
 | 4          | project | 10     | word ladders                    |
-| 5          | math    | 10     | recursion                       |
-| 6          | project | 10     | implement sorts                 |
-| 7          | project | 10     | twitter data analysis           |
-| 8          | test    | 20     | midterm                         |
-| 9          | project | 10     | BST                             |
-| 10         | project | 10     | AVL tree                        |
-| 11         | project | 10     | Heaps                           |
-| 12         | math    | 10     | Graphs                          |
-| 13         | project | 10     | Dijkstra                        |
-| 14         | project | 10     | Knapsack                        |
-| 15         | test    | 20     | Final                           |
+| 5          | math    | 10     | memory management               |
+| 6          | project | 10     | binary search                   |
+| 7          | project | 10     | sorting                         |
+| 8          | test    | 10     | midterm                         |
+| 9          | project | 10     | twitter data analysis           |
+| 10         | project | 10     | BST                             |
+| 11         | project | 10     | AVL tree                        |
+| 12         | project | 10     | Heaps                           |
+| 13         | math    | 10     | Graphs                          |
+| 14         | project | 10     | Dijkstra                        |
+| 15         | project | 10     | Knapsack                        |
+| 16         | test    | 20     | Final                           |
 
 **Late Work Policy:**
 
@@ -230,6 +233,23 @@ Also *Your* Job to Learn! Helping Students Reflect on their Learning Progress
 Should you Allow your Students to Grade their own Homework?
 
 Peer and Self Assessment in Massive Online Classes
+-->
+<!--
+
+## Notes
+
+The book includes a library called `pythonds` using
+```
+from pythonds.basic import Stack
+```
+This library exists only for the book and is not something widely used.
+The goal of this class is to teach you how real python programmers work,
+and so you should not use this library.
+Instead use a list data structure whenever the book uses a stack.
+
+The Recursion/scope lecture was very disorganized because I tried to improvise too much.
+I need to add more structure to lectures.
+Also, draw the frames with both line numbers and local/global variables.
 -->
 
 ## Accommodations for Disabilities
