@@ -99,7 +99,7 @@ While the queue is not empty
     For each territory in the neighbors of current_territory that is not in the visited set
         Make a copy of dictionary[current_territory]
         Push territory onto the copy
-        Set dictionary[current_territory] = copy + territory
+        Set dictionary[territory] = copy + territory
         Enqueue territory
     Add current_territory to the visited set
 ```
