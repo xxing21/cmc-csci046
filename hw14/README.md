@@ -151,10 +151,10 @@ but is modified to use a priority queue instead of a regular queue:
             Push territory onto the copy
 ++          CALCULATE THE PRIORITY OF THE PATH AS PRIORITY OF CURRENT_TERRITORY + NUMBER OF ARMIES ON TERRITORY
 ++          IF TERRITORY NOT IN THE PRIORITY QUEUE
-                Set dictionary[current_territory] = copy + territory
+                Set dictionary[territory] = copy + territory
 ++              Enqueue territory WITH PRIORITY 
 ++          ELSE, IF THE NEW PRIORITY IS LESS THEN THE PRIORITY IN THE QUEUE
-                Set dictionary[current_territory] = copy + territory
+                Set dictionary[territory] = copy + territory
 ++              UPDATE THE TERRITORY'S PRIORITY IN THE PRIORITY QUEUE WITH THE NEW PRIORITY
         Add current_territory to the visited set
 ```
